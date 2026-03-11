@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product preview card component</title>
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    /> -->
 
     <link rel="stylesheet" href="./styles/styles.css" />
 
@@ -19,5 +19,39 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <section class="product-card">
+        <picture class="image-container">
+          <img
+            class="main-image"
+            src="./images/parfum-1x.png"
+            srcset="./images/parfum-1x.png, ./images/parfum-2x.gng"
+            alt="Parfum bottle with chsnel brand name with leafs on corners"
+          />
+        </picture>
+        <article class="product-card-info">
+          <div class="product-info">
+            <p class="product-category">PARFUME</p>
+            <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+            <p class="product-description">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div class="price-container">
+            <p class="main-price">$149.99</p>
+            <p class="crossed-price">$169.99</p>
+          </div>
+
+          <button class="btn" type="button" name="add to cart">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-ShoppingCart" />
+            </svg>
+            <p class="btn-text">Add to Cart</p>
+          </button>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
